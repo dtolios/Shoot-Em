@@ -25,6 +25,23 @@ SceneNode::Ptr SceneNode::detachChild(const SceneNode& node)
 	return result;
 }
 
+void SceneNode::update(sf::Time dt)
+{
+	updateCurrent(dt);
+	updateChildren(dt);
+}
+
+void SceneNode::updateCurrent(sf::Time)
+{
+	// Do nothing by default
+}
+
+void SceneNode::updateChildren(sf::Time dt)
+{
+	for (Ptr& child : mChildren)
+		child->update(dt);
+}
+
 void SceneNode::draw(sf::RenderTarget& target, sf::RenderStates states) const
 {
 	states.transform *= getTransform();
