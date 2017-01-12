@@ -44,5 +44,16 @@
     <ClInclude Include="SceneNode.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="ResourceHolder.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceIdentifiers.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourceHolder.inl">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

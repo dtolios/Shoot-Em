@@ -164,7 +164,12 @@
     <ClInclude Include="Aircraft.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="ResourceHolder.h" />
+    <ClInclude Include="ResourceIdentifiers.h" />
     <ClInclude Include="SceneNode.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourceHolder.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
