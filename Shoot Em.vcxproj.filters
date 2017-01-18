@@ -30,6 +30,12 @@
     <ClCompile Include="SceneNode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="World.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">
@@ -48,6 +54,12 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="ResourceIdentifiers.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteNode.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="World.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

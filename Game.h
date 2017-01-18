@@ -1,7 +1,13 @@
 #ifndef GAME_H
 #define GAME_H
 
-#include <SFML/Graphics.hpp>
+#include "World.h"
+
+#include <SFML/System/Time.hpp>
+#include <SFML/Window/Keyboard.hpp>
+#include <SFML/Graphics/Text.hpp>
+#include <SFML/Graphics/Font.hpp>
+#include <SFML/Graphics/RenderWindow.hpp>
 
 class Game : private sf::NonCopyable
 {
@@ -19,17 +25,10 @@ private:
 
 
 private:
-	static const float		PlayerSpeed;
 	static const sf::Time	TimePerFrame;
 
 	sf::RenderWindow		mWindow;
-	sf::Texture				mTexture;
-	sf::Sprite				mPlayer;
-
-	bool					mIsMovingUp;
-	bool					mIsMovingDown;
-	bool					mIsMovingRight;
-	bool					mIsMovingLeft;
+	World					mWorld;
 };
 
 #endif // GAME_H
